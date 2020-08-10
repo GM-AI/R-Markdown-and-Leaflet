@@ -1,0 +1,20 @@
+---
+title: "R-Markdown-and-Leaflet"
+author: "GM"
+date: "August 10, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Vilnius is capital of Lithuania. Rotuse is City Hall.
+
+```{r map}
+library(leaflet)
+df<-data.frame(lat=54.678214,lng=25.286930         )
+map<-leaflet(df) %>% addTiles() %>% addMarkers(lat=54.678214,lng=25.286930 , popup = "Rotuse")
+map
+```
+
