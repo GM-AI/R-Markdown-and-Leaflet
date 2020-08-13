@@ -40,5 +40,22 @@ vln<-as.data.frame(read.csv("vilnius_pop.csv", header = TRUE, sep = ","))
 plot_ly(vln, x=vln$Year, y=vln$Population, color=as.numeric(sub("%", "", vln$Growth.Rate)),mode = 'markers', width=4)
 ```
 
+## Vilnius population data explorer as shiny app
+
+https://gm-ai.shinyapps.io/Test_app/
+
+Just one look helps to make 2 assumptions:
+
+1. Growth rate is not normal distribution
+
+2. There is big drop in growth rate since 1990. What causes it?
+
+## Hint
+
+You can find answer here: 
+
+https://en.wikipedia.org/wiki/Act_of_the_Re-Establishment_of_the_State_of_Lithuania
+
+https://osp.stat.gov.lt/EN/statistiniu-rodikliu-analize?hash=7ae84706-e252-40de-85d8-35baecbbb038#/
 
 
