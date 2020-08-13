@@ -1,0 +1,12 @@
+name: Test_app
+title: Test_app
+username:
+account: gm-ai
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2667976
+bundleId: 3512575
+url: https://gm-ai.shinyapps.io/Test_app/
+when: 1597348902.48317
+asMultiple: FALSE
+asStatic: FALSE
